@@ -6,41 +6,30 @@
     <title>ToDo</title>
 
     <link href="{{ asset("css/app.css") }}" rel="stylesheet" />
-    <script src="{{ asset("js/app.js") }}" ></script>
 
 </head>
 <body>
 
-<table class="table">
-    <thead>
-    <tr>
-        <th>Выполнение</th>
-        <th>Наименование</th>
-        <th>Действия</th>
-    </tr>
-    </thead>
-    <tbody id="bodyToDo">
-
-
-    @foreach($arr as $arra)
+    <table class="table">
+        <thead>
         <tr>
-            <th>
-                <input type="checkbox" value="" checked>
-            </th>
-            <td>Mark</td>
-            <td>
-                <button type="button" class="btn btn-edit">Изменить</button>
-                <button type="button" class="btn btn-delete">Удалить</button>
-            </td>
+            <th>Выполнение</th>
+            <th>Наименование</th>
+            <th>Действия</th>
         </tr>
-    @endforeach
+        </thead>
+        <tbody id="bodyToDo"></tbody>
+    </table>
 
+    <button id="add" type="button" class="btn btn-add">Добавить</button>
 
-    </tbody>
-</table>
+    @extends('row.item')
+    @extends('row.notification')
+    @extends('row.modal')
 
-<button type="button" class="btn btn-add">Добавить</button>
-
+    <script src="{{ asset("js/jquery.js") }}" ></script>
+    <script src="{{ asset("js/jquery.tmpl.js") }}" ></script>
+    <script src="{{ asset("js/app.js") }}" ></script>
 
 </body>
 </html>

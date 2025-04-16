@@ -23,7 +23,9 @@ class TodoController extends Controller
      */
     public function store(StoreTodoRequest $request)
     {
-        return new TodoResource(Todo::create($request->all()));
+        return response()->json([
+            'message' => (Todo::create($request->all())) ? 'Задача успешно добавлена': 'Ошибка выполнения'
+        ]);
     }
 
     /**
@@ -39,8 +41,9 @@ class TodoController extends Controller
      */
     public function update(UpdateTodoRequest $request, Todo $todo)
     {
-        $todo->update($request->all());
-        return new TodoResource($todo);
+        return response()->json([
+            'message' => ($todo->update($request->all())) ? 'Задача успешно обновлена': 'Ошибка выполнения'
+        ]);
     }
 
     /**
@@ -48,9 +51,8 @@ class TodoController extends Controller
      */
     public function destroy(Todo $todo)
     {
-        $todo->delete();
         return response()->json([
-            'message' => 'Item removed successfully'
+            'message' => ($todo->delete()) ? 'Задача успешно удалена': 'Ошибка выполнения'
         ]);
     }
 }

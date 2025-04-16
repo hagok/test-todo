@@ -22,7 +22,7 @@ class UpdateTodoRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => ['required', 'string', 'max:255'],
+            'title' => ['string', 'max:255'],
             'checked' => ['boolean'],
         ];
     }

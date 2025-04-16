@@ -17,7 +17,7 @@ class TodoResource extends JsonResource
         return [
             'id' => $this->id,
             'title' => $this->title,
-            'checked' => $this->checked
+            'checked' => ($this->checked == 1) ? 'checked' : '',
         ];
     }
 }
