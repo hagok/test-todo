@@ -11,7 +11,7 @@
 
 0. Клонируем на свою машину
 ```
-git clone https://github.com/hagok/test-todo
+git clone https://github.com/hagok/test-todo.git
 ```
 1. Через терминал заходим в эту папку. 
 2. Поднимаем контейнер через docker-compose:
