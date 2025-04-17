@@ -109,6 +109,39 @@ input{
     display: none;
 }
 
+.paginate{
+    display: inline-block;
+}
+.paginate button{
+    margin-right: 5px;
+}
+.btn-paginate{
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+.btn-paginate:hover{
+    color: #fff;
+    background-color: #0a5ad0;
+    border-color: #0a5ad0;
+}
+.btn-paginate-check{
+    color: #000;
+    background-color: rgba(193, 193, 193, 0.73);
+    border-color: rgba(193, 193, 193, 0.73);
+}
+.btn-paginate-check:hover{
+    color: #000;
+    background-color: rgba(213, 213, 213, 0.73);
+    border-color: rgba(213, 213, 213, 0.73);
+}
+
+
+.added{
+    display: inline-block;
+    float: right;
+}
+
 .gone{
     display: none;
 }

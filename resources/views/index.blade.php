@@ -21,7 +21,12 @@
         <tbody id="bodyToDo"></tbody>
     </table>
 
-    <button id="add" type="button" class="btn btn-add">Добавить</button>
+    <div>
+        <div class="paginate"></div>
+        <div class="added">
+            <button id="add" type="button" class="btn btn-add">Добавить</button>
+        </div>
+    </div>
 
     @extends('row.item')
     @extends('row.notification')

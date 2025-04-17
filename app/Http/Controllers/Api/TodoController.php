@@ -13,9 +13,9 @@ class TodoController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Todo $todo)
     {
-        return TodoResource::collection(Todo::all());//Todo::paginate(15);
+        return TodoResource::collection(Todo::paginate(10));
     }
 
     /**

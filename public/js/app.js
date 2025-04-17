@@ -1,5 +1,3 @@
-
-let BASE_URL = "/api/todos";
 $(document).ready(function() {
     onRead();
 
