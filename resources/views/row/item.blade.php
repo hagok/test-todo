@@ -1,4 +1,4 @@
-<script id="movieTmpl" type="text/x-jquery-tmpl">
+<script id="loadTmpl" type="text/x-jquery-tmpl">
     <tr>
         <td><input data-id="${id}" class="checkbox" type="checkbox" ${checked}/></td>
         <td>${title}</td>

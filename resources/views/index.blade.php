@@ -30,6 +30,6 @@
     <script src="{{ asset("js/jquery.js") }}" ></script>
     <script src="{{ asset("js/jquery.tmpl.js") }}" ></script>
     <script src="{{ asset("js/app.js") }}" ></script>
-
+    <script src="{{ asset("js/crud.js") }}" ></script>
 </body>
 </html>
